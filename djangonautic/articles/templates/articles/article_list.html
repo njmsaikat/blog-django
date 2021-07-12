@@ -9,7 +9,15 @@
 </head>
 
 <body>
-    <h1>article list</h1>
+    <h1>Article list</h1>
+    <div class="articles_to_show">
+        {% for article in articles_to_show %}
+        <h2><a href="#">{{ article.title }}</a></h2>
+        <p>{{ article.body }}</p>
+        <p>{{ article.date }}</p>
+        {% endfor %}
+    </div>
+
 </body>
 
 </html>
