@@ -1,7 +1,6 @@
 {% extends 'base_layout.html' %}
 
 {% block content %}
-<h1>Article list</h1>
 <div class="all_articles">
     {% for article in articles_to_show %}
     <h2><a href="{% url 'detail' slug=article.slug %}">{{ article.title }}</a></h2>
