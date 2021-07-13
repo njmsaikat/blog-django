@@ -7,11 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
+    <link rel="icon" href="{% static 'fav.png' }" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 
 <body>
     <div class="wrapper">
+        <h1><a href="{% url 'list' %}"><img src="{% static 'logo.png' %}" alt=""></a></h1>
         {% block content %}
         {% endblock %}
     </div>
