@@ -3,7 +3,7 @@
 {% block content %}
 <div class="article-detail">
     <h2><a href="{% url 'detail' slug=article.slug %}">{{ article.title }}</a></h2>
-
+    <img src="{{article.thumb.url}}" alt="">
     <p>{{ article.date }}</p>
     <p>{{ article.body }}</p>
 </div>
